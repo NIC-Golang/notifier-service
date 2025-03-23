@@ -1,10 +1,10 @@
 services:
   notifier-service:
     build:
-      context: ./src/notifier-service
+      context: .
       dockerfile: Dockerfile
     env_file:
-      - src/notifier-service/.env
+      - ./.env
     ports:
       - ${PORT_NOTIFIER}
     depends_on:
